@@ -320,3 +320,112 @@ footer {
     color: #777777;
     margin-top: 10px;
 }
+
+/* ==========================================================================
+   MEDIA QUERY PARA TELEMÓVEIS / CELULARES (Ecrãs até 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* Ajuste do Header e do Menu */
+    header {
+        position: relative; /* Deixa de ser fixo para não ocupar muito ecrã no telemóvel */
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    h1 span {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca os links do menu um abaixo do outro */
+        gap: 15px;
+        padding: 0;
+    }
+    
+    nav ul li a {
+        margin-right: 0;
+        font-size: 18px;
+    }
+
+    /* Ajuste do Hero (Banner Principal) */
+    section#hero {
+        height: auto;
+        padding: 60px 20px;
+        justify-content: center; /* Centraliza o texto no telemóvel */
+        text-align: center;
+    }
+
+    section#hero .banner-text h2 {
+        font-size: 32px; /* Diminui o título para caber no ecrã */
+        margin: 15px 0;
+    }
+
+    section#hero .banner-text p {
+        font-size: 16px;
+        margin: 15px auto;
+        max-width: 100%;
+    }
+
+    button {
+        margin-top: 40px;
+        width: 100%; /* O botão ocupa a largura disponível para ficar mais fácil de clicar */
+        max-width: 280px;
+    }
+
+    /* Ajuste do Cardápio */
+    section#cardapio h2 {
+        font-size: 32px;
+        padding: 30px 10px;
+        flex-direction: column; /* Coloca as linhas decorativas em cima e embaixo */
+        gap: 10px;
+    }
+
+    section#cardapio h2::before,  
+    section#cardapio h2::after {
+        width: 100px; /* Diminui as linhas amarelas laterais */
+    }
+
+    section#cardapio p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    section#cardapio ul li {
+        flex-direction: column; /* Alinha o nome do prato e o preço um sob o outro */
+        gap: 10px;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    /* Ajuste do Sobre Nós */
+    section#sobre-nos {
+        padding: 40px 20px;
+    }
+
+    section#sobre-nos h2 {
+        font-size: 28px;
+    }
+
+    section#sobre-nos p {
+        font-size: 16px;
+        text-align: left; /* Fica mais legível em ecrãs pequenos */
+    }
+
+    /* Ajuste da Galeria */
+    .fotos-container {
+        gap: 15px;
+    }
+
+    .fotos-container img {
+        width: 100%; /* As imagens adaptam-se à largura do ecrã do telemóvel */
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 4 / 3; /* Mantém a proporção bonita das fotos */
+    }
+}
