@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -14,9 +15,10 @@
 
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#cardapio">Cardapio</a></li>
+                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#sobre-nos">Sobre Nós</a></li>
                 <li><a href="#reserva">Reservas</a></li>
-                <li><a href="#galeria">Galeria</a></li>
+               
             </ul> 
         </nav>
     </header>
@@ -44,6 +46,17 @@
               </ul>
         </section>
 
+        <section id="galeria"> 
+            <h2>galeria</h2>
+            <p>desfrute de nossa galeria de fotos e vídeos para conhecer melhor nosso ambiente e pratos. </p>
+           <div class="fotos-container"> 
+                  <img src="imagen/clientes.jpg" alt="Foto 1">
+                  <img src="imagen/mesas.jpg" alt="Foto 2">
+                  <img src="imagen/prato.jpg" alt="Foto 3">
+                  <img src="imagen/grupos.jpg" alt="Foto 4">       
+           </div>
+        </section>
+
         <section id="sobre-nos">
           <h2>sobre nós <br>Grand Restaurant</h2>
            <h3>saiba mais sobre nossa história e valores.</h3>
@@ -64,33 +77,42 @@
         </section>
 
         <section id="reserva">
-          <h2>reservas</h2>
-            <p>faça sua reserva online e garanta sua mesa.</p>
-            <div class="reserva-info">
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>E-mail:</strong> info@grandrestaurant.com</p>
-            </div>
-        </section>
+  <h2>reservas</h2>
+  <p>faça sua reserva online e garanta sua mesa.</p>
+  
+  <div class="reserva-info">
+      <p><strong>Telefone:</strong> (11) 1234-5678</p>
+      <p><strong>E-mail:</strong> info@grandrestaurant.com</p>
+  </div>
+
+  <div class="mapa-container">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-8.000!3d41.000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSua+Localizacao!5e0!3m2!1spt!2spt!4v123456789" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 15px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+  </div>
+</section>
             
-        <section id="galeria"> 
-            <h2>galeria</h2>
-            <p>desfrute de nossa galeria de fotos e vídeos para conhecer melhor nosso ambiente e pratos. </p>
-           <div class="fotos-container"> 
-                  <img src="imagen/clientes.jpg" alt="Foto 1">
-                  <img src="imagen/mesas.jpg" alt="Foto 2">
-                  <img src="imagen/prato.jpg" alt="Foto 3">
-                  <img src="imagen/grupos.jpg" alt="Foto 4">       
-           </div>
-        </section>
    </main>
 
    <footer id="footer-content">
         <div class="footr-content">
             <div class="rede-social">
-                  <a href="https://www.instagram.com/grandrestaurant/" target="_blank">instagram</a>
-                  <a href="https://www.facebook.com/grandrestaurant" target="_blank">facebook</a>
-                  <a href="https://www.youtube.com/grandrestaurant" target="_blank">youtube</a>
-            </div>
+      <a href="https://www.instagram.com/grandrestaurant/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/grandrestaurant" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/grandrestaurant" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+      </a>
+</div>
         
             <div class="localizacao">
                  <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro, Cidade - Estado</p>
@@ -104,8 +126,14 @@
             <div class="copyright">
                  <p>&copy; 2026 grand restaurant. todos os direitos reservados.</p>
             </div>
-
+            
         </div>
     </footer>
+      
+                <a href="https://wa.me/seunumerodetelefone" target="_blank"    class="whatsapp-float">
+                <i class="fa-brands fa-whatsapp"></i>
+               </a>
+     
+                
 </body>
 </html> 
